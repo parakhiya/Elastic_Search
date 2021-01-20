@@ -23,7 +23,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 
     @Autowired
     ProductRepository productRepository;
-
+//
     @Override
     public ArrayList<Product> getAll(String text) {
         QueryBuilder queryBuilder = QueryBuilders.boolQuery().should(QueryBuilders.queryStringQuery(text)
